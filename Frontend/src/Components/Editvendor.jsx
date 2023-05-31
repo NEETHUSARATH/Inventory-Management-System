@@ -47,18 +47,13 @@ const Editvendor = () => {
     }
   };
   return (
-    <Box sx={{ display: "flex", backgroundColor: "#030b6b", height: 900, mt: 5 }}>
+    <Box sx={{ display: "flex", backgroundColor: "#030b6b", height: 700, mt: 2 }}>
       <Container maxWidth="sm" sx={{ mt: 3 }}>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <Grid container spacing={2}>
-          <Typography
-            gutterBottom
-            variant="h5"
-            fontFamily="cursive"
-            component="div"
-          >
-            EDIT - VENDOR
-          </Typography>
+        <Grid container spacing={2} sx={{ mt: 5 ,backgroundColor:"#fff", height:450}}>
+        <div className="container" >
+            <h4 style={{ textAlign:"center", color:"#030b6b",marginTop:"4%"}}> EDIT VENDOR</h4>
+          </div>
           <Grid item xs={12}>
             <TextField
               {...register("vendorname", { required: true })}

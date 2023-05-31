@@ -38,10 +38,10 @@ const AddDeliveryChallan = () => {
   return (
     <>
     <Box
-      sx={{ display: "flex", backgroundColor: "#030b6b", height: 900, mt: 10 }}
+      sx={{ display: "flex", backgroundColor: "#030b6b", height: 900, mt:2}}
     >
       
-        <Container maxWidth="xs">
+        <Container maxWidth="xs" sx={{ mt: 5 ,backgroundColor:"#fff", height:450}}>
           <form onSubmit={handleSubmit(onSubmit)}>
             <Box
               mb={2}
@@ -52,14 +52,9 @@ const AddDeliveryChallan = () => {
                 alignItems: "center",
               }}
             >
-              <Typography
-                gutterBottom
-                variant="h4"
-                fontFamily="cursive"
-                component="div"
-              >
-                GENERATE - CHALLAN
-              </Typography>
+              <div className="container" >
+            <h4 style={{ textAlign:"center", color:"#030b6b",marginTop:"4%"}}>GENERATE CHALLAN</h4>
+          </div>
               <TextField
                 sx={{ mt: 3 }}
                 variant="outlined"
@@ -101,7 +96,7 @@ const AddDeliveryChallan = () => {
               sx={{ mt: 3 }}
               type="submit"
               variant="contained"
-              color="success"
+              color="primary"
               fullWidth
             >
               Generate
